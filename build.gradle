@@ -39,5 +39,7 @@ dependencies {
     compile('com.h2database:h2')
     /*mustache 템플릿*/
     compile('org.springframework.boot:spring-boot-starter-mustache')
+    /*스프링 시큐리티*/
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

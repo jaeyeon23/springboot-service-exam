@@ -41,6 +41,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mustache')
     /*스프링 시큐리티*/
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    /*MariaDB 드라이브*/
+    compile('org.mariadb.jdbc:mariadb-java-client')
     /*세션 동기화를 위한 세팅*/
     /*compile('org.springframework.session:spring-session-jdbc')*/
     testCompile('org.springframework.boot:spring-boot-starter-test')

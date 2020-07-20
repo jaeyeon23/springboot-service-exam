@@ -1,13 +1,15 @@
+use springboot_webservice;
+
 create table posts(
     id bigint not null auto_increment,
-    created_date datetime,
+    create_date datetime,
     modified_date datetime,
     author varchar(255),
     content TEXT not null,
     title varchar(500) not null,
     primary key(id)) engine=InnoDB;
 
-create table posts(
+create table user(
     id bigint not null auto_increment,
     create_date datetime,
     modified_date datetime,
@@ -38,4 +40,3 @@ CREATE TABLE SPRING_SESSION_ATTRIBUTES (
 	CONSTRAINT SPRING_SESSION_ATTRIBUTES_PK PRIMARY KEY (SESSION_PRIMARY_ID, ATTRIBUTE_NAME),
 	CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION(PRIMARY_ID) ON DELETE CASCADE
 );
-
